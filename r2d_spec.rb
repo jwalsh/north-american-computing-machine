@@ -12,7 +12,9 @@ describe RomanNumeralConverter do
   Then { converter.convert(2) == 'II' }
   Then { converter.convert(5) == 'V' }
   Then { converter.convert(6) == 'VI' }
-  Then { converter.convert(8) == 'VIII' }
+  Then { converter.convert(10) == 'X' }
+  Then { converter.convert(12) == 'XII' }
+  Then { converter.convert(15) == 'XV' }
 
 
 end

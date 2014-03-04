@@ -5,13 +5,19 @@ class RomanNumeralConverter
 
     roman = ""
 
-    if n >= 5
+    while n >= 10
+      roman << "X"
+      n -= 10
+    end
+
+    while n >= 5
       roman << "V"
       n -= 5
     end
 
-    if n >= 0
-      roman << "I" * n
+    # Fallthrough
+    while n >= 1
+      roman << "I"
       n -= 1
     end
 
