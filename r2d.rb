@@ -1,9 +1,20 @@
+# http://en.wikipedia.org/wiki/Roman_numerals
+
 class RomanNumeralConverter
   def convert(n)
-    if n == 1
-      'I'
-    else
-      'II'
+
+    roman = ""
+
+    if n >= 5
+      roman << "V"
+      n -= 5
     end
+
+    if n >= 0
+      roman << "I" * n
+      n -= 1
+    end
+
+    roman
   end
 end
