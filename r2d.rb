@@ -1,6 +1,4 @@
-def r2d(r)
-  puts "Roman numeral: "
+class RomanNumeralConverter
+  def convert(n)
+    'I'
 end
-
-
-# Run the test through rspec
