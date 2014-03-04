@@ -9,4 +9,7 @@ describe RomanNumeralConverter do
 
   Given(:converter) { RomanNumeralConverter.new }
   Then { converter.convert(1) == 'I' }
+  Then { converter.convert(2) == 'II' }
+
+
 end
